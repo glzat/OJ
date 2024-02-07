@@ -110,6 +110,7 @@ for key in question_list:
             get_problem(questions[idx_list],idx_problem,key,value)
             print(f"[Log] Successfully to add the problem {key}-{value}!")
         idx_problem += 1
+    time.sleep(1)
     idx_problem = 1
     idx_list += 1
 print("[Log] All done!")
