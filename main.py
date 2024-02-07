@@ -84,10 +84,10 @@ def get_question_list_name():# 获取题单名称
         print(f"[Log] Successfully to add the question list {rows[i].text.strip()}!")
 
 if first_time:# 初始化程序
-    # add_question_list()
-    
-    # with open("question_list.json","w") as f:
-    #     json.dump(question_list,f)
+    add_question_list()
+    get_question_list_name() # 获取题单
+    with open("question_list.json","w",encoding="utf-8") as f:
+        json.dump(question_list,f)
     config["first_time"] = False
     with open("config.json","w")as f:# 更新配置文件
         json.dump(config,f)
@@ -99,9 +99,7 @@ with open("question.txt","r") as f:# 读取题单
     questions = f.read().split(",")
 
 questions.pop()# 删除最后一个空元素
-# get_question_list_name() # 获取题单
-# with open("question_list.json","w",encoding="utf-8") as f:
-#     json.dump(question_list,f)
+
 idx_list = 1
 idx_problem = 1
 for key in question_list:
