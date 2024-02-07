@@ -1,0 +1,2084 @@
+<div class="column">
+ <h4 class="ui top attached block header">
+  题目描述
+ </h4>
+ <div class="ui bottom attached segment font-content">
+  <div style="position: relative; overflow: hidden; ">
+   <p>
+    小 Z 有一片森林，含有
+    <svg focusable="false" height="1.545ex" role="img" style="vertical-align: 0" viewbox="0 -683 888 683" width="2.009ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z" id="MJX-1-TEX-I-1D441">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mi">
+        <use data-c="1D441" xlink:href="#MJX-1-TEX-I-1D441">
+        </use>
+       </g>
+      </g>
+     </g>
+    </svg>
+    个节点，每个节点上都有一个非负整数作为权值。初始的时候，森林里有
+    <svg focusable="false" height="1.545ex" role="img" style="vertical-align: 0" viewbox="0 -683 1051 683" width="2.378ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M289 629Q289 635 232 637Q208 637 201 638T194 648Q194 649 196 659Q197 662 198 666T199 671T201 676T203 679T207 681T212 683T220 683T232 684Q238 684 262 684T307 683Q386 683 398 683T414 678Q415 674 451 396L487 117L510 154Q534 190 574 254T662 394Q837 673 839 675Q840 676 842 678T846 681L852 683H948Q965 683 988 683T1017 684Q1051 684 1051 673Q1051 668 1048 656T1045 643Q1041 637 1008 637Q968 636 957 634T939 623Q936 618 867 340T797 59Q797 55 798 54T805 50T822 48T855 46H886Q892 37 892 35Q892 19 885 5Q880 0 869 0Q864 0 828 1T736 2Q675 2 644 2T609 1Q592 1 592 11Q592 13 594 25Q598 41 602 43T625 46Q652 46 685 49Q699 52 704 61Q706 65 742 207T813 490T848 631L654 322Q458 10 453 5Q451 4 449 3Q444 0 433 0Q418 0 415 7Q413 11 374 317L335 624L267 354Q200 88 200 79Q206 46 272 46H282Q288 41 289 37T286 19Q282 3 278 1Q274 0 267 0Q265 0 255 0T221 1T157 2Q127 2 95 1T58 0Q43 0 39 2T35 11Q35 13 38 25T43 40Q45 46 65 46Q135 46 154 86Q158 92 223 354T289 629Z" id="MJX-2-TEX-I-1D440">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mi">
+        <use data-c="1D440" xlink:href="#MJX-2-TEX-I-1D440">
+        </use>
+       </g>
+      </g>
+     </g>
+    </svg>
+    条边。
+   </p>
+   <p>
+    小 Z 希望执行
+    <svg focusable="false" height="1.532ex" role="img" style="vertical-align: 0" viewbox="0 -677 704 677" width="1.593ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M40 437Q21 437 21 445Q21 450 37 501T71 602L88 651Q93 669 101 677H569H659Q691 677 697 676T704 667Q704 661 687 553T668 444Q668 437 649 437Q640 437 637 437T631 442L629 445Q629 451 635 490T641 551Q641 586 628 604T573 629Q568 630 515 631Q469 631 457 630T439 622Q438 621 368 343T298 60Q298 48 386 46Q418 46 427 45T436 36Q436 31 433 22Q429 4 424 1L422 0Q419 0 415 0Q410 0 363 1T228 2Q99 2 64 0H49Q43 6 43 9T45 27Q49 40 55 46H83H94Q174 46 189 55Q190 56 191 56Q196 59 201 76T241 233Q258 301 269 344Q339 619 339 625Q339 630 310 630H279Q212 630 191 624Q146 614 121 583T67 467Q60 445 57 441T43 437H40Z" id="MJX-3-TEX-I-1D447">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mi">
+        <use data-c="1D447" xlink:href="#MJX-3-TEX-I-1D447">
+        </use>
+       </g>
+      </g>
+     </g>
+    </svg>
+    个操作，操作有两类：
+   </p>
+   <ul>
+    <li>
+     <p>
+      <code>
+       Q x y k
+      </code>
+      查询点
+      <svg focusable="false" height="1.025ex" role="img" style="vertical-align: -0.025ex" viewbox="0 -442 572 453" width="1.294ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+       <defs>
+        <path d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z" id="MJX-4-TEX-I-1D465">
+        </path>
+       </defs>
+       <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+        <g data-mml-node="math">
+         <g data-mml-node="mi">
+          <use data-c="1D465" xlink:href="#MJX-4-TEX-I-1D465">
+          </use>
+         </g>
+        </g>
+       </g>
+      </svg>
+      到点
+      <svg focusable="false" height="1.464ex" role="img" style="vertical-align: -0.464ex" viewbox="0 -442 490 647" width="1.109ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+       <defs>
+        <path d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z" id="MJX-5-TEX-I-1D466">
+        </path>
+       </defs>
+       <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+        <g data-mml-node="math">
+         <g data-mml-node="mi">
+          <use data-c="1D466" xlink:href="#MJX-5-TEX-I-1D466">
+          </use>
+         </g>
+        </g>
+       </g>
+      </svg>
+      路径上所有的权值中，第
+      <svg focusable="false" height="1.595ex" role="img" style="vertical-align: -0.025ex" viewbox="0 -694 521 705" width="1.179ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+       <defs>
+        <path d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z" id="MJX-6-TEX-I-1D458">
+        </path>
+       </defs>
+       <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+        <g data-mml-node="math">
+         <g data-mml-node="mi">
+          <use data-c="1D458" xlink:href="#MJX-6-TEX-I-1D458">
+          </use>
+         </g>
+        </g>
+       </g>
+      </svg>
+      小的权值是多少。此操作保证点
+      <svg focusable="false" height="1.025ex" role="img" style="vertical-align: -0.025ex" viewbox="0 -442 572 453" width="1.294ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+       <defs>
+        <path d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z" id="MJX-7-TEX-I-1D465">
+        </path>
+       </defs>
+       <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+        <g data-mml-node="math">
+         <g data-mml-node="mi">
+          <use data-c="1D465" xlink:href="#MJX-7-TEX-I-1D465">
+          </use>
+         </g>
+        </g>
+       </g>
+      </svg>
+      和点
+      <svg focusable="false" height="1.464ex" role="img" style="vertical-align: -0.464ex" viewbox="0 -442 490 647" width="1.109ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+       <defs>
+        <path d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z" id="MJX-8-TEX-I-1D466">
+        </path>
+       </defs>
+       <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+        <g data-mml-node="math">
+         <g data-mml-node="mi">
+          <use data-c="1D466" xlink:href="#MJX-8-TEX-I-1D466">
+          </use>
+         </g>
+        </g>
+       </g>
+      </svg>
+      连通，同时这两个节点的路径上至少有
+      <svg focusable="false" height="1.595ex" role="img" style="vertical-align: -0.025ex" viewbox="0 -694 521 705" width="1.179ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+       <defs>
+        <path d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z" id="MJX-9-TEX-I-1D458">
+        </path>
+       </defs>
+       <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+        <g data-mml-node="math">
+         <g data-mml-node="mi">
+          <use data-c="1D458" xlink:href="#MJX-9-TEX-I-1D458">
+          </use>
+         </g>
+        </g>
+       </g>
+      </svg>
+      个点。
+     </p>
+    </li>
+    <li>
+     <p>
+      <code>
+       L x y
+      </code>
+      在点
+      <svg focusable="false" height="1.025ex" role="img" style="vertical-align: -0.025ex" viewbox="0 -442 572 453" width="1.294ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+       <defs>
+        <path d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z" id="MJX-10-TEX-I-1D465">
+        </path>
+       </defs>
+       <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+        <g data-mml-node="math">
+         <g data-mml-node="mi">
+          <use data-c="1D465" xlink:href="#MJX-10-TEX-I-1D465">
+          </use>
+         </g>
+        </g>
+       </g>
+      </svg>
+      和点
+      <svg focusable="false" height="1.464ex" role="img" style="vertical-align: -0.464ex" viewbox="0 -442 490 647" width="1.109ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+       <defs>
+        <path d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z" id="MJX-11-TEX-I-1D466">
+        </path>
+       </defs>
+       <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+        <g data-mml-node="math">
+         <g data-mml-node="mi">
+          <use data-c="1D466" xlink:href="#MJX-11-TEX-I-1D466">
+          </use>
+         </g>
+        </g>
+       </g>
+      </svg>
+      之间连一条边。保证完成此操作后仍然是一片森林。
+     </p>
+    </li>
+   </ul>
+   <p>
+    为了体现程序的在线性，我们把输入数据进行了加密。设
+    <svg focusable="false" height="1.595ex" role="img" style="vertical-align: -0.025ex" viewbox="0 -694 3255 705" width="7.364ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M117 59Q117 26 142 26Q179 26 205 131Q211 151 215 152Q217 153 225 153H229Q238 153 241 153T246 151T248 144Q247 138 245 128T234 90T214 43T183 6T137 -11Q101 -11 70 11T38 85Q38 97 39 102L104 360Q167 615 167 623Q167 626 166 628T162 632T157 634T149 635T141 636T132 637T122 637Q112 637 109 637T101 638T95 641T94 647Q94 649 96 661Q101 680 107 682T179 688Q194 689 213 690T243 693T254 694Q266 694 266 686Q266 675 193 386T118 83Q118 81 118 75T117 65V59Z" id="MJX-12-TEX-I-1D459">
+      </path>
+      <path d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z" id="MJX-12-TEX-I-1D44E">
+      </path>
+      <path d="M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z" id="MJX-12-TEX-I-1D460">
+      </path>
+      <path d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z" id="MJX-12-TEX-I-1D461">
+      </path>
+      <path d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z" id="MJX-12-TEX-I-1D45B">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mi">
+        <use data-c="1D459" xlink:href="#MJX-12-TEX-I-1D459">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(298,0)">
+        <use data-c="1D44E" xlink:href="#MJX-12-TEX-I-1D44E">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(827,0)">
+        <use data-c="1D460" xlink:href="#MJX-12-TEX-I-1D460">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(1296,0)">
+        <use data-c="1D461" xlink:href="#MJX-12-TEX-I-1D461">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(1657,0)">
+        <use data-c="1D44E" xlink:href="#MJX-12-TEX-I-1D44E">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(2186,0)">
+        <use data-c="1D45B" xlink:href="#MJX-12-TEX-I-1D45B">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(2786,0)">
+        <use data-c="1D460" xlink:href="#MJX-12-TEX-I-1D460">
+        </use>
+       </g>
+      </g>
+     </g>
+    </svg>
+    为程序上一次输出的结果，初始的时候
+    <svg focusable="false" height="1.595ex" role="img" style="vertical-align: -0.025ex" viewbox="0 -694 3255 705" width="7.364ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M117 59Q117 26 142 26Q179 26 205 131Q211 151 215 152Q217 153 225 153H229Q238 153 241 153T246 151T248 144Q247 138 245 128T234 90T214 43T183 6T137 -11Q101 -11 70 11T38 85Q38 97 39 102L104 360Q167 615 167 623Q167 626 166 628T162 632T157 634T149 635T141 636T132 637T122 637Q112 637 109 637T101 638T95 641T94 647Q94 649 96 661Q101 680 107 682T179 688Q194 689 213 690T243 693T254 694Q266 694 266 686Q266 675 193 386T118 83Q118 81 118 75T117 65V59Z" id="MJX-13-TEX-I-1D459">
+      </path>
+      <path d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z" id="MJX-13-TEX-I-1D44E">
+      </path>
+      <path d="M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z" id="MJX-13-TEX-I-1D460">
+      </path>
+      <path d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z" id="MJX-13-TEX-I-1D461">
+      </path>
+      <path d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z" id="MJX-13-TEX-I-1D45B">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mi">
+        <use data-c="1D459" xlink:href="#MJX-13-TEX-I-1D459">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(298,0)">
+        <use data-c="1D44E" xlink:href="#MJX-13-TEX-I-1D44E">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(827,0)">
+        <use data-c="1D460" xlink:href="#MJX-13-TEX-I-1D460">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(1296,0)">
+        <use data-c="1D461" xlink:href="#MJX-13-TEX-I-1D461">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(1657,0)">
+        <use data-c="1D44E" xlink:href="#MJX-13-TEX-I-1D44E">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(2186,0)">
+        <use data-c="1D45B" xlink:href="#MJX-13-TEX-I-1D45B">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(2786,0)">
+        <use data-c="1D460" xlink:href="#MJX-13-TEX-I-1D460">
+        </use>
+       </g>
+      </g>
+     </g>
+    </svg>
+    为
+    <svg focusable="false" height="1.557ex" role="img" style="vertical-align: -0.05ex" viewbox="0 -666 500 688" width="1.131ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" id="MJX-14-TEX-N-30">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mn">
+        <use data-c="30" xlink:href="#MJX-14-TEX-N-30">
+        </use>
+       </g>
+      </g>
+     </g>
+    </svg>
+    。
+   </p>
+   <p>
+    对于一个输入的操作
+    <code>
+     Q x y k
+    </code>
+    ，其真实操作为
+    <code>
+     Q x^lastans y^lastans k^lastans
+    </code>
+    。
+   </p>
+   <p>
+    对于一个输入的操作
+    <code>
+     L x y
+    </code>
+    ，其真实操作为
+    <code>
+     L x^lastans y^lastans
+    </code>
+    。其中
+    <code>
+     ^
+    </code>
+    运算符表示异或。
+   </p>
+   <p>
+    请写一个程序来帮助小 Z 完成这些操作。
+   </p>
+  </div>
+ </div>
+</div>
+<div class="column">
+ <h4 class="ui top attached block header">
+  输入格式
+ </h4>
+ <div class="ui bottom attached segment font-content">
+  <div style="position: relative; overflow: hidden; ">
+   <p>
+    第一行包含一个正整数
+    <svg focusable="false" height="1.416ex" role="img" style="vertical-align: -0.025ex" viewbox="0 -615 3398 626" width="7.688ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M27 422Q80 426 109 478T141 600V615H181V431H316V385H181V241Q182 116 182 100T189 68Q203 29 238 29Q282 29 292 100Q293 108 293 146V181H333V146V134Q333 57 291 17Q264 -10 221 -10Q187 -10 162 2T124 33T105 68T98 100Q97 107 97 248V385H18V422H27Z" id="MJX-1-TEX-N-74">
+      </path>
+      <path d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z" id="MJX-1-TEX-N-65">
+      </path>
+      <path d="M295 316Q295 356 268 385T190 414Q154 414 128 401Q98 382 98 349Q97 344 98 336T114 312T157 287Q175 282 201 278T245 269T277 256Q294 248 310 236T342 195T359 133Q359 71 321 31T198 -10H190Q138 -10 94 26L86 19L77 10Q71 4 65 -1L54 -11H46H42Q39 -11 33 -5V74V132Q33 153 35 157T45 162H54Q66 162 70 158T75 146T82 119T101 77Q136 26 198 26Q295 26 295 104Q295 133 277 151Q257 175 194 187T111 210Q75 227 54 256T33 318Q33 357 50 384T93 424T143 442T187 447H198Q238 447 268 432L283 424L292 431Q302 440 314 448H322H326Q329 448 335 442V310L329 304H301Q295 310 295 316Z" id="MJX-1-TEX-N-73">
+      </path>
+      <path d="M370 305T349 305T313 320T297 358Q297 381 312 396Q317 401 317 402T307 404Q281 408 258 408Q209 408 178 376Q131 329 131 219Q131 137 162 90Q203 29 272 29Q313 29 338 55T374 117Q376 125 379 127T395 129H409Q415 123 415 120Q415 116 411 104T395 71T366 33T318 2T249 -11Q163 -11 99 53T34 214Q34 318 99 383T250 448T370 421T404 357Q404 334 387 320Z" id="MJX-1-TEX-N-63">
+      </path>
+      <path d="M137 305T115 305T78 320T63 359Q63 394 97 421T218 448Q291 448 336 416T396 340Q401 326 401 309T402 194V124Q402 76 407 58T428 40Q443 40 448 56T453 109V145H493V106Q492 66 490 59Q481 29 455 12T400 -6T353 12T329 54V58L327 55Q325 52 322 49T314 40T302 29T287 17T269 6T247 -2T221 -8T190 -11Q130 -11 82 20T34 107Q34 128 41 147T68 188T116 225T194 253T304 268H318V290Q318 324 312 340Q290 411 215 411Q197 411 181 410T156 406T148 403Q170 388 170 359Q170 334 154 320ZM126 106Q126 75 150 51T209 26Q247 26 276 49T315 109Q317 116 318 175Q318 233 317 233Q309 233 296 232T251 223T193 203T147 166T126 106Z" id="MJX-1-TEX-N-61">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mtext">
+        <use data-c="74" xlink:href="#MJX-1-TEX-N-74">
+        </use>
+        <use data-c="65" transform="translate(389,0)" xlink:href="#MJX-1-TEX-N-65">
+        </use>
+        <use data-c="73" transform="translate(833,0)" xlink:href="#MJX-1-TEX-N-73">
+        </use>
+        <use data-c="74" transform="translate(1227,0)" xlink:href="#MJX-1-TEX-N-74">
+        </use>
+        <use data-c="63" transform="translate(1616,0)" xlink:href="#MJX-1-TEX-N-63">
+        </use>
+        <use data-c="61" transform="translate(2060,0)" xlink:href="#MJX-1-TEX-N-61">
+        </use>
+        <use data-c="73" transform="translate(2560,0)" xlink:href="#MJX-1-TEX-N-73">
+        </use>
+        <use data-c="65" transform="translate(2954,0)" xlink:href="#MJX-1-TEX-N-65">
+        </use>
+       </g>
+      </g>
+     </g>
+    </svg>
+    ，表示当前测试数据的测试点编号。
+   </p>
+   <p>
+    第二行包含三个整数
+    <svg focusable="false" height="1.984ex" role="img" style="vertical-align: -0.439ex" viewbox="0 -683 3532.3 877" width="7.992ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z" id="MJX-2-TEX-I-1D441">
+      </path>
+      <path d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z" id="MJX-2-TEX-N-2C">
+      </path>
+      <path d="M289 629Q289 635 232 637Q208 637 201 638T194 648Q194 649 196 659Q197 662 198 666T199 671T201 676T203 679T207 681T212 683T220 683T232 684Q238 684 262 684T307 683Q386 683 398 683T414 678Q415 674 451 396L487 117L510 154Q534 190 574 254T662 394Q837 673 839 675Q840 676 842 678T846 681L852 683H948Q965 683 988 683T1017 684Q1051 684 1051 673Q1051 668 1048 656T1045 643Q1041 637 1008 637Q968 636 957 634T939 623Q936 618 867 340T797 59Q797 55 798 54T805 50T822 48T855 46H886Q892 37 892 35Q892 19 885 5Q880 0 869 0Q864 0 828 1T736 2Q675 2 644 2T609 1Q592 1 592 11Q592 13 594 25Q598 41 602 43T625 46Q652 46 685 49Q699 52 704 61Q706 65 742 207T813 490T848 631L654 322Q458 10 453 5Q451 4 449 3Q444 0 433 0Q418 0 415 7Q413 11 374 317L335 624L267 354Q200 88 200 79Q206 46 272 46H282Q288 41 289 37T286 19Q282 3 278 1Q274 0 267 0Q265 0 255 0T221 1T157 2Q127 2 95 1T58 0Q43 0 39 2T35 11Q35 13 38 25T43 40Q45 46 65 46Q135 46 154 86Q158 92 223 354T289 629Z" id="MJX-2-TEX-I-1D440">
+      </path>
+      <path d="M40 437Q21 437 21 445Q21 450 37 501T71 602L88 651Q93 669 101 677H569H659Q691 677 697 676T704 667Q704 661 687 553T668 444Q668 437 649 437Q640 437 637 437T631 442L629 445Q629 451 635 490T641 551Q641 586 628 604T573 629Q568 630 515 631Q469 631 457 630T439 622Q438 621 368 343T298 60Q298 48 386 46Q418 46 427 45T436 36Q436 31 433 22Q429 4 424 1L422 0Q419 0 415 0Q410 0 363 1T228 2Q99 2 64 0H49Q43 6 43 9T45 27Q49 40 55 46H83H94Q174 46 189 55Q190 56 191 56Q196 59 201 76T241 233Q258 301 269 344Q339 619 339 625Q339 630 310 630H279Q212 630 191 624Q146 614 121 583T67 467Q60 445 57 441T43 437H40Z" id="MJX-2-TEX-I-1D447">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mi">
+        <use data-c="1D441" xlink:href="#MJX-2-TEX-I-1D441">
+        </use>
+       </g>
+       <g data-mml-node="mo" transform="translate(888,0)">
+        <use data-c="2C" xlink:href="#MJX-2-TEX-N-2C">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(1332.7,0)">
+        <use data-c="1D440" xlink:href="#MJX-2-TEX-I-1D440">
+        </use>
+       </g>
+       <g data-mml-node="mo" transform="translate(2383.7,0)">
+        <use data-c="2C" xlink:href="#MJX-2-TEX-N-2C">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(2828.3,0)">
+        <use data-c="1D447" xlink:href="#MJX-2-TEX-I-1D447">
+        </use>
+       </g>
+      </g>
+     </g>
+    </svg>
+    ，分别表示节点数、初始边数、操作数。
+   </p>
+   <p>
+    第三行包含
+    <svg focusable="false" height="1.545ex" role="img" style="vertical-align: 0" viewbox="0 -683 888 683" width="2.009ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z" id="MJX-3-TEX-I-1D441">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mi">
+        <use data-c="1D441" xlink:href="#MJX-3-TEX-I-1D441">
+        </use>
+       </g>
+      </g>
+     </g>
+    </svg>
+    个非负整数表示
+    <svg focusable="false" height="1.545ex" role="img" style="vertical-align: 0" viewbox="0 -683 888 683" width="2.009ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z" id="MJX-4-TEX-I-1D441">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mi">
+        <use data-c="1D441" xlink:href="#MJX-4-TEX-I-1D441">
+        </use>
+       </g>
+      </g>
+     </g>
+    </svg>
+    个节点上的权值。
+   </p>
+   <p>
+    接下来
+    <svg focusable="false" height="1.545ex" role="img" style="vertical-align: 0" viewbox="0 -683 1051 683" width="2.378ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M289 629Q289 635 232 637Q208 637 201 638T194 648Q194 649 196 659Q197 662 198 666T199 671T201 676T203 679T207 681T212 683T220 683T232 684Q238 684 262 684T307 683Q386 683 398 683T414 678Q415 674 451 396L487 117L510 154Q534 190 574 254T662 394Q837 673 839 675Q840 676 842 678T846 681L852 683H948Q965 683 988 683T1017 684Q1051 684 1051 673Q1051 668 1048 656T1045 643Q1041 637 1008 637Q968 636 957 634T939 623Q936 618 867 340T797 59Q797 55 798 54T805 50T822 48T855 46H886Q892 37 892 35Q892 19 885 5Q880 0 869 0Q864 0 828 1T736 2Q675 2 644 2T609 1Q592 1 592 11Q592 13 594 25Q598 41 602 43T625 46Q652 46 685 49Q699 52 704 61Q706 65 742 207T813 490T848 631L654 322Q458 10 453 5Q451 4 449 3Q444 0 433 0Q418 0 415 7Q413 11 374 317L335 624L267 354Q200 88 200 79Q206 46 272 46H282Q288 41 289 37T286 19Q282 3 278 1Q274 0 267 0Q265 0 255 0T221 1T157 2Q127 2 95 1T58 0Q43 0 39 2T35 11Q35 13 38 25T43 40Q45 46 65 46Q135 46 154 86Q158 92 223 354T289 629Z" id="MJX-5-TEX-I-1D440">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mi">
+        <use data-c="1D440" xlink:href="#MJX-5-TEX-I-1D440">
+        </use>
+       </g>
+      </g>
+     </g>
+    </svg>
+    行，每行包含两个整数
+    <svg focusable="false" height="1.025ex" role="img" style="vertical-align: -0.025ex" viewbox="0 -442 572 453" width="1.294ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z" id="MJX-6-TEX-I-1D465">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mi">
+        <use data-c="1D465" xlink:href="#MJX-6-TEX-I-1D465">
+        </use>
+       </g>
+      </g>
+     </g>
+    </svg>
+    和
+    <svg focusable="false" height="1.464ex" role="img" style="vertical-align: -0.464ex" viewbox="0 -442 490 647" width="1.109ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z" id="MJX-7-TEX-I-1D466">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mi">
+        <use data-c="1D466" xlink:href="#MJX-7-TEX-I-1D466">
+        </use>
+       </g>
+      </g>
+     </g>
+    </svg>
+    ，表示初始的时候，点
+    <svg focusable="false" height="1.025ex" role="img" style="vertical-align: -0.025ex" viewbox="0 -442 572 453" width="1.294ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z" id="MJX-8-TEX-I-1D465">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mi">
+        <use data-c="1D465" xlink:href="#MJX-8-TEX-I-1D465">
+        </use>
+       </g>
+      </g>
+     </g>
+    </svg>
+    和点
+    <svg focusable="false" height="1.464ex" role="img" style="vertical-align: -0.464ex" viewbox="0 -442 490 647" width="1.109ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z" id="MJX-9-TEX-I-1D466">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mi">
+        <use data-c="1D466" xlink:href="#MJX-9-TEX-I-1D466">
+        </use>
+       </g>
+      </g>
+     </g>
+    </svg>
+    之间有一条无向边。
+   </p>
+   <p>
+    接下来
+    <svg focusable="false" height="1.532ex" role="img" style="vertical-align: 0" viewbox="0 -677 704 677" width="1.593ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M40 437Q21 437 21 445Q21 450 37 501T71 602L88 651Q93 669 101 677H569H659Q691 677 697 676T704 667Q704 661 687 553T668 444Q668 437 649 437Q640 437 637 437T631 442L629 445Q629 451 635 490T641 551Q641 586 628 604T573 629Q568 630 515 631Q469 631 457 630T439 622Q438 621 368 343T298 60Q298 48 386 46Q418 46 427 45T436 36Q436 31 433 22Q429 4 424 1L422 0Q419 0 415 0Q410 0 363 1T228 2Q99 2 64 0H49Q43 6 43 9T45 27Q49 40 55 46H83H94Q174 46 189 55Q190 56 191 56Q196 59 201 76T241 233Q258 301 269 344Q339 619 339 625Q339 630 310 630H279Q212 630 191 624Q146 614 121 583T67 467Q60 445 57 441T43 437H40Z" id="MJX-10-TEX-I-1D447">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mi">
+        <use data-c="1D447" xlink:href="#MJX-10-TEX-I-1D447">
+        </use>
+       </g>
+      </g>
+     </g>
+    </svg>
+    行，每行描述一个操作，格式为
+    <code>
+     Q x y k
+    </code>
+    或者
+    <code>
+     L x y
+    </code>
+    ，其含义见题目描述部分。
+   </p>
+  </div>
+ </div>
+</div>
+<div class="column">
+ <h4 class="ui top attached block header">
+  输出格式
+ </h4>
+ <div class="ui bottom attached segment font-content">
+  <div style="position: relative; overflow: hidden; ">
+   <p>
+    对于每一个第一类操作，输出一行一个非负整数表示答案。
+   </p>
+  </div>
+ </div>
+</div>
+<div class="column">
+ <h4 class="ui top attached block header">
+  样例
+ </h4>
+ <div class="ui bottom attached segment font-content">
+  <div style="position: relative; overflow: hidden; ">
+   <h4>
+    样例输入
+   </h4>
+   <div class="ui existing segment">
+    <pre style="margin-top: 0; margin-bottom: 0; "><code><span class="hl-text hl-plain">1
+8 4 8
+1 1 2 2 3 3 4 4
+4 7
+1 8
+2 4
+2 1
+Q 8 7 3
+Q 3 5 1
+Q 10 0 0
+L 5 4
+L 3 2
+L 0 7
+Q 9 2 5
+Q 6 1 6
+</span></code></pre>
+   </div>
+   <h4>
+    样例输出
+   </h4>
+   <div class="ui existing segment">
+    <pre style="margin-top: 0; margin-bottom: 0; "><code><span class="hl-text hl-plain">2 
+2
+1
+4
+2
+</span></code></pre>
+   </div>
+   <h4>
+    样例解释
+   </h4>
+   <p>
+    对于第一个操作
+    <code>
+     Q 8 7 3
+    </code>
+    ，此时
+    <svg focusable="false" height="1.756ex" role="img" style="vertical-align: -0.186ex" viewbox="0 -694 5088.6 776" width="11.513ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M117 59Q117 26 142 26Q179 26 205 131Q211 151 215 152Q217 153 225 153H229Q238 153 241 153T246 151T248 144Q247 138 245 128T234 90T214 43T183 6T137 -11Q101 -11 70 11T38 85Q38 97 39 102L104 360Q167 615 167 623Q167 626 166 628T162 632T157 634T149 635T141 636T132 637T122 637Q112 637 109 637T101 638T95 641T94 647Q94 649 96 661Q101 680 107 682T179 688Q194 689 213 690T243 693T254 694Q266 694 266 686Q266 675 193 386T118 83Q118 81 118 75T117 65V59Z" id="MJX-1-TEX-I-1D459">
+      </path>
+      <path d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z" id="MJX-1-TEX-I-1D44E">
+      </path>
+      <path d="M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z" id="MJX-1-TEX-I-1D460">
+      </path>
+      <path d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z" id="MJX-1-TEX-I-1D461">
+      </path>
+      <path d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z" id="MJX-1-TEX-I-1D45B">
+      </path>
+      <path d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z" id="MJX-1-TEX-N-3D">
+      </path>
+      <path d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" id="MJX-1-TEX-N-30">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mi">
+        <use data-c="1D459" xlink:href="#MJX-1-TEX-I-1D459">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(298,0)">
+        <use data-c="1D44E" xlink:href="#MJX-1-TEX-I-1D44E">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(827,0)">
+        <use data-c="1D460" xlink:href="#MJX-1-TEX-I-1D460">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(1296,0)">
+        <use data-c="1D461" xlink:href="#MJX-1-TEX-I-1D461">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(1657,0)">
+        <use data-c="1D44E" xlink:href="#MJX-1-TEX-I-1D44E">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(2186,0)">
+        <use data-c="1D45B" xlink:href="#MJX-1-TEX-I-1D45B">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(2786,0)">
+        <use data-c="1D460" xlink:href="#MJX-1-TEX-I-1D460">
+        </use>
+       </g>
+       <g data-mml-node="mo" transform="translate(3532.8,0)">
+        <use data-c="3D" xlink:href="#MJX-1-TEX-N-3D">
+        </use>
+       </g>
+       <g data-mml-node="mn" transform="translate(4588.6,0)">
+        <use data-c="30" xlink:href="#MJX-1-TEX-N-30">
+        </use>
+       </g>
+      </g>
+     </g>
+    </svg>
+    ，所以真实操作为
+    <code>
+     Q 8^0 7^0 3^0
+    </code>
+    ，也即
+    <code>
+     Q 8 7 3
+    </code>
+    。点
+    <svg focusable="false" height="1.557ex" role="img" style="vertical-align: -0.05ex" viewbox="0 -666 500 688" width="1.131ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z" id="MJX-2-TEX-N-38">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mn">
+        <use data-c="38" xlink:href="#MJX-2-TEX-N-38">
+        </use>
+       </g>
+      </g>
+     </g>
+    </svg>
+    到点
+    <svg focusable="false" height="1.579ex" role="img" style="vertical-align: -0.05ex" viewbox="0 -676 500 698" width="1.131ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z" id="MJX-3-TEX-N-37">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mn">
+        <use data-c="37" xlink:href="#MJX-3-TEX-N-37">
+        </use>
+       </g>
+      </g>
+     </g>
+    </svg>
+    的路径上一共有
+    <svg focusable="false" height="1.557ex" role="img" style="vertical-align: -0.05ex" viewbox="0 -666 500 688" width="1.131ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z" id="MJX-4-TEX-N-35">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mn">
+        <use data-c="35" xlink:href="#MJX-4-TEX-N-35">
+        </use>
+       </g>
+      </g>
+     </g>
+    </svg>
+    个点，其权值为
+    <svg focusable="false" height="1.532ex" role="img" style="vertical-align: 0" viewbox="0 -677 3500 677" width="7.919ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z" id="MJX-5-TEX-N-34">
+      </path>
+      <path d="" id="MJX-5-TEX-N-A0">
+      </path>
+      <path d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" id="MJX-5-TEX-N-31">
+      </path>
+      <path d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" id="MJX-5-TEX-N-32">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mn">
+        <use data-c="34" xlink:href="#MJX-5-TEX-N-34">
+        </use>
+       </g>
+       <g data-mml-node="mtext" transform="translate(500,0)">
+        <use data-c="A0" xlink:href="#MJX-5-TEX-N-A0">
+        </use>
+       </g>
+       <g data-mml-node="mn" transform="translate(750,0)">
+        <use data-c="31" xlink:href="#MJX-5-TEX-N-31">
+        </use>
+       </g>
+       <g data-mml-node="mtext" transform="translate(1250,0)">
+        <use data-c="A0" xlink:href="#MJX-5-TEX-N-A0">
+        </use>
+       </g>
+       <g data-mml-node="mn" transform="translate(1500,0)">
+        <use data-c="31" xlink:href="#MJX-5-TEX-N-31">
+        </use>
+       </g>
+       <g data-mml-node="mtext" transform="translate(2000,0)">
+        <use data-c="A0" xlink:href="#MJX-5-TEX-N-A0">
+        </use>
+       </g>
+       <g data-mml-node="mn" transform="translate(2250,0)">
+        <use data-c="32" xlink:href="#MJX-5-TEX-N-32">
+        </use>
+       </g>
+       <g data-mml-node="mtext" transform="translate(2750,0)">
+        <use data-c="A0" xlink:href="#MJX-5-TEX-N-A0">
+        </use>
+       </g>
+       <g data-mml-node="mn" transform="translate(3000,0)">
+        <use data-c="34" xlink:href="#MJX-5-TEX-N-34">
+        </use>
+       </g>
+      </g>
+     </g>
+    </svg>
+    。这些权值中，第三小的为
+    <svg focusable="false" height="1.507ex" role="img" style="vertical-align: 0" viewbox="0 -666 500 666" width="1.131ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" id="MJX-6-TEX-N-32">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mn">
+        <use data-c="32" xlink:href="#MJX-6-TEX-N-32">
+        </use>
+       </g>
+      </g>
+     </g>
+    </svg>
+    ，输出
+    <svg focusable="false" height="1.507ex" role="img" style="vertical-align: 0" viewbox="0 -666 500 666" width="1.131ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" id="MJX-7-TEX-N-32">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mn">
+        <use data-c="32" xlink:href="#MJX-7-TEX-N-32">
+        </use>
+       </g>
+      </g>
+     </g>
+    </svg>
+    ，
+    <svg focusable="false" height="1.595ex" role="img" style="vertical-align: -0.025ex" viewbox="0 -694 3255 705" width="7.364ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M117 59Q117 26 142 26Q179 26 205 131Q211 151 215 152Q217 153 225 153H229Q238 153 241 153T246 151T248 144Q247 138 245 128T234 90T214 43T183 6T137 -11Q101 -11 70 11T38 85Q38 97 39 102L104 360Q167 615 167 623Q167 626 166 628T162 632T157 634T149 635T141 636T132 637T122 637Q112 637 109 637T101 638T95 641T94 647Q94 649 96 661Q101 680 107 682T179 688Q194 689 213 690T243 693T254 694Q266 694 266 686Q266 675 193 386T118 83Q118 81 118 75T117 65V59Z" id="MJX-8-TEX-I-1D459">
+      </path>
+      <path d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z" id="MJX-8-TEX-I-1D44E">
+      </path>
+      <path d="M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z" id="MJX-8-TEX-I-1D460">
+      </path>
+      <path d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z" id="MJX-8-TEX-I-1D461">
+      </path>
+      <path d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z" id="MJX-8-TEX-I-1D45B">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mi">
+        <use data-c="1D459" xlink:href="#MJX-8-TEX-I-1D459">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(298,0)">
+        <use data-c="1D44E" xlink:href="#MJX-8-TEX-I-1D44E">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(827,0)">
+        <use data-c="1D460" xlink:href="#MJX-8-TEX-I-1D460">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(1296,0)">
+        <use data-c="1D461" xlink:href="#MJX-8-TEX-I-1D461">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(1657,0)">
+        <use data-c="1D44E" xlink:href="#MJX-8-TEX-I-1D44E">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(2186,0)">
+        <use data-c="1D45B" xlink:href="#MJX-8-TEX-I-1D45B">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(2786,0)">
+        <use data-c="1D460" xlink:href="#MJX-8-TEX-I-1D460">
+        </use>
+       </g>
+      </g>
+     </g>
+    </svg>
+    变为
+    <svg focusable="false" height="1.507ex" role="img" style="vertical-align: 0" viewbox="0 -666 500 666" width="1.131ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" id="MJX-9-TEX-N-32">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mn">
+        <use data-c="32" xlink:href="#MJX-9-TEX-N-32">
+        </use>
+       </g>
+      </g>
+     </g>
+    </svg>
+    。
+   </p>
+   <p>
+    对于第二个操作
+    <code>
+     Q 3 5 1
+    </code>
+    ，此时
+    <svg focusable="false" height="1.756ex" role="img" style="vertical-align: -0.186ex" viewbox="0 -694 5088.6 776" width="11.513ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M117 59Q117 26 142 26Q179 26 205 131Q211 151 215 152Q217 153 225 153H229Q238 153 241 153T246 151T248 144Q247 138 245 128T234 90T214 43T183 6T137 -11Q101 -11 70 11T38 85Q38 97 39 102L104 360Q167 615 167 623Q167 626 166 628T162 632T157 634T149 635T141 636T132 637T122 637Q112 637 109 637T101 638T95 641T94 647Q94 649 96 661Q101 680 107 682T179 688Q194 689 213 690T243 693T254 694Q266 694 266 686Q266 675 193 386T118 83Q118 81 118 75T117 65V59Z" id="MJX-10-TEX-I-1D459">
+      </path>
+      <path d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z" id="MJX-10-TEX-I-1D44E">
+      </path>
+      <path d="M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z" id="MJX-10-TEX-I-1D460">
+      </path>
+      <path d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z" id="MJX-10-TEX-I-1D461">
+      </path>
+      <path d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z" id="MJX-10-TEX-I-1D45B">
+      </path>
+      <path d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z" id="MJX-10-TEX-N-3D">
+      </path>
+      <path d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" id="MJX-10-TEX-N-32">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mi">
+        <use data-c="1D459" xlink:href="#MJX-10-TEX-I-1D459">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(298,0)">
+        <use data-c="1D44E" xlink:href="#MJX-10-TEX-I-1D44E">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(827,0)">
+        <use data-c="1D460" xlink:href="#MJX-10-TEX-I-1D460">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(1296,0)">
+        <use data-c="1D461" xlink:href="#MJX-10-TEX-I-1D461">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(1657,0)">
+        <use data-c="1D44E" xlink:href="#MJX-10-TEX-I-1D44E">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(2186,0)">
+        <use data-c="1D45B" xlink:href="#MJX-10-TEX-I-1D45B">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(2786,0)">
+        <use data-c="1D460" xlink:href="#MJX-10-TEX-I-1D460">
+        </use>
+       </g>
+       <g data-mml-node="mo" transform="translate(3532.8,0)">
+        <use data-c="3D" xlink:href="#MJX-10-TEX-N-3D">
+        </use>
+       </g>
+       <g data-mml-node="mn" transform="translate(4588.6,0)">
+        <use data-c="32" xlink:href="#MJX-10-TEX-N-32">
+        </use>
+       </g>
+      </g>
+     </g>
+    </svg>
+    ，所以真实操作为
+    <code>
+     Q 3^2 5^2 1^2
+    </code>
+    ，也即
+    <code>
+     Q 1 7 3
+    </code>
+    。点
+    <svg focusable="false" height="1.507ex" role="img" style="vertical-align: 0" viewbox="0 -666 500 666" width="1.131ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" id="MJX-11-TEX-N-31">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mn">
+        <use data-c="31" xlink:href="#MJX-11-TEX-N-31">
+        </use>
+       </g>
+      </g>
+     </g>
+    </svg>
+    到点
+    <svg focusable="false" height="1.579ex" role="img" style="vertical-align: -0.05ex" viewbox="0 -676 500 698" width="1.131ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z" id="MJX-12-TEX-N-37">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mn">
+        <use data-c="37" xlink:href="#MJX-12-TEX-N-37">
+        </use>
+       </g>
+      </g>
+     </g>
+    </svg>
+    的路径上一共有
+    <svg focusable="false" height="1.532ex" role="img" style="vertical-align: 0" viewbox="0 -677 500 677" width="1.131ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z" id="MJX-13-TEX-N-34">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mn">
+        <use data-c="34" xlink:href="#MJX-13-TEX-N-34">
+        </use>
+       </g>
+      </g>
+     </g>
+    </svg>
+    个点，其权值为
+    <svg focusable="false" height="1.532ex" role="img" style="vertical-align: 0" viewbox="0 -677 2750 677" width="6.222ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" id="MJX-14-TEX-N-31">
+      </path>
+      <path d="" id="MJX-14-TEX-N-A0">
+      </path>
+      <path d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" id="MJX-14-TEX-N-32">
+      </path>
+      <path d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z" id="MJX-14-TEX-N-34">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mn">
+        <use data-c="31" xlink:href="#MJX-14-TEX-N-31">
+        </use>
+       </g>
+       <g data-mml-node="mtext" transform="translate(500,0)">
+        <use data-c="A0" xlink:href="#MJX-14-TEX-N-A0">
+        </use>
+       </g>
+       <g data-mml-node="mn" transform="translate(750,0)">
+        <use data-c="31" xlink:href="#MJX-14-TEX-N-31">
+        </use>
+       </g>
+       <g data-mml-node="mtext" transform="translate(1250,0)">
+        <use data-c="A0" xlink:href="#MJX-14-TEX-N-A0">
+        </use>
+       </g>
+       <g data-mml-node="mn" transform="translate(1500,0)">
+        <use data-c="32" xlink:href="#MJX-14-TEX-N-32">
+        </use>
+       </g>
+       <g data-mml-node="mtext" transform="translate(2000,0)">
+        <use data-c="A0" xlink:href="#MJX-14-TEX-N-A0">
+        </use>
+       </g>
+       <g data-mml-node="mn" transform="translate(2250,0)">
+        <use data-c="34" xlink:href="#MJX-14-TEX-N-34">
+        </use>
+       </g>
+      </g>
+     </g>
+    </svg>
+    。这些权值中，第三小的为
+    <svg focusable="false" height="1.507ex" role="img" style="vertical-align: 0" viewbox="0 -666 500 666" width="1.131ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" id="MJX-15-TEX-N-32">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mn">
+        <use data-c="32" xlink:href="#MJX-15-TEX-N-32">
+        </use>
+       </g>
+      </g>
+     </g>
+    </svg>
+    ， 输出
+    <svg focusable="false" height="1.507ex" role="img" style="vertical-align: 0" viewbox="0 -666 500 666" width="1.131ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" id="MJX-16-TEX-N-32">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mn">
+        <use data-c="32" xlink:href="#MJX-16-TEX-N-32">
+        </use>
+       </g>
+      </g>
+     </g>
+    </svg>
+    ，
+    <svg focusable="false" height="1.595ex" role="img" style="vertical-align: -0.025ex" viewbox="0 -694 3255 705" width="7.364ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M117 59Q117 26 142 26Q179 26 205 131Q211 151 215 152Q217 153 225 153H229Q238 153 241 153T246 151T248 144Q247 138 245 128T234 90T214 43T183 6T137 -11Q101 -11 70 11T38 85Q38 97 39 102L104 360Q167 615 167 623Q167 626 166 628T162 632T157 634T149 635T141 636T132 637T122 637Q112 637 109 637T101 638T95 641T94 647Q94 649 96 661Q101 680 107 682T179 688Q194 689 213 690T243 693T254 694Q266 694 266 686Q266 675 193 386T118 83Q118 81 118 75T117 65V59Z" id="MJX-17-TEX-I-1D459">
+      </path>
+      <path d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z" id="MJX-17-TEX-I-1D44E">
+      </path>
+      <path d="M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z" id="MJX-17-TEX-I-1D460">
+      </path>
+      <path d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z" id="MJX-17-TEX-I-1D461">
+      </path>
+      <path d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z" id="MJX-17-TEX-I-1D45B">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mi">
+        <use data-c="1D459" xlink:href="#MJX-17-TEX-I-1D459">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(298,0)">
+        <use data-c="1D44E" xlink:href="#MJX-17-TEX-I-1D44E">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(827,0)">
+        <use data-c="1D460" xlink:href="#MJX-17-TEX-I-1D460">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(1296,0)">
+        <use data-c="1D461" xlink:href="#MJX-17-TEX-I-1D461">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(1657,0)">
+        <use data-c="1D44E" xlink:href="#MJX-17-TEX-I-1D44E">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(2186,0)">
+        <use data-c="1D45B" xlink:href="#MJX-17-TEX-I-1D45B">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(2786,0)">
+        <use data-c="1D460" xlink:href="#MJX-17-TEX-I-1D460">
+        </use>
+       </g>
+      </g>
+     </g>
+    </svg>
+    变为
+    <svg focusable="false" height="1.507ex" role="img" style="vertical-align: 0" viewbox="0 -666 500 666" width="1.131ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" id="MJX-18-TEX-N-32">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mn">
+        <use data-c="32" xlink:href="#MJX-18-TEX-N-32">
+        </use>
+       </g>
+      </g>
+     </g>
+    </svg>
+    。之后的操作类似。
+   </p>
+  </div>
+ </div>
+</div>
+<div class="column">
+ <h4 class="ui top attached block header">
+  数据范围与提示
+ </h4>
+ <div class="ui bottom attached segment font-content">
+  <div style="position: relative; overflow: hidden; ">
+   <table class="ui structured celled table">
+    <thead>
+     <tr>
+      <th style="text-align:center;">
+       测试点编号
+      </th>
+      <th style="text-align:center;">
+       <svg focusable="false" height="1.984ex" role="img" style="vertical-align: -0.439ex" viewbox="0 -683 3532.3 877" width="7.992ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+         <path d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z" id="MJX-1-TEX-I-1D441">
+         </path>
+         <path d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z" id="MJX-1-TEX-N-2C">
+         </path>
+         <path d="M289 629Q289 635 232 637Q208 637 201 638T194 648Q194 649 196 659Q197 662 198 666T199 671T201 676T203 679T207 681T212 683T220 683T232 684Q238 684 262 684T307 683Q386 683 398 683T414 678Q415 674 451 396L487 117L510 154Q534 190 574 254T662 394Q837 673 839 675Q840 676 842 678T846 681L852 683H948Q965 683 988 683T1017 684Q1051 684 1051 673Q1051 668 1048 656T1045 643Q1041 637 1008 637Q968 636 957 634T939 623Q936 618 867 340T797 59Q797 55 798 54T805 50T822 48T855 46H886Q892 37 892 35Q892 19 885 5Q880 0 869 0Q864 0 828 1T736 2Q675 2 644 2T609 1Q592 1 592 11Q592 13 594 25Q598 41 602 43T625 46Q652 46 685 49Q699 52 704 61Q706 65 742 207T813 490T848 631L654 322Q458 10 453 5Q451 4 449 3Q444 0 433 0Q418 0 415 7Q413 11 374 317L335 624L267 354Q200 88 200 79Q206 46 272 46H282Q288 41 289 37T286 19Q282 3 278 1Q274 0 267 0Q265 0 255 0T221 1T157 2Q127 2 95 1T58 0Q43 0 39 2T35 11Q35 13 38 25T43 40Q45 46 65 46Q135 46 154 86Q158 92 223 354T289 629Z" id="MJX-1-TEX-I-1D440">
+         </path>
+         <path d="M40 437Q21 437 21 445Q21 450 37 501T71 602L88 651Q93 669 101 677H569H659Q691 677 697 676T704 667Q704 661 687 553T668 444Q668 437 649 437Q640 437 637 437T631 442L629 445Q629 451 635 490T641 551Q641 586 628 604T573 629Q568 630 515 631Q469 631 457 630T439 622Q438 621 368 343T298 60Q298 48 386 46Q418 46 427 45T436 36Q436 31 433 22Q429 4 424 1L422 0Q419 0 415 0Q410 0 363 1T228 2Q99 2 64 0H49Q43 6 43 9T45 27Q49 40 55 46H83H94Q174 46 189 55Q190 56 191 56Q196 59 201 76T241 233Q258 301 269 344Q339 619 339 625Q339 630 310 630H279Q212 630 191 624Q146 614 121 583T67 467Q60 445 57 441T43 437H40Z" id="MJX-1-TEX-I-1D447">
+         </path>
+        </defs>
+        <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+         <g data-mml-node="math">
+          <g data-mml-node="mi">
+           <use data-c="1D441" xlink:href="#MJX-1-TEX-I-1D441">
+           </use>
+          </g>
+          <g data-mml-node="mo" transform="translate(888,0)">
+           <use data-c="2C" xlink:href="#MJX-1-TEX-N-2C">
+           </use>
+          </g>
+          <g data-mml-node="mi" transform="translate(1332.7,0)">
+           <use data-c="1D440" xlink:href="#MJX-1-TEX-I-1D440">
+           </use>
+          </g>
+          <g data-mml-node="mo" transform="translate(2383.7,0)">
+           <use data-c="2C" xlink:href="#MJX-1-TEX-N-2C">
+           </use>
+          </g>
+          <g data-mml-node="mi" transform="translate(2828.3,0)">
+           <use data-c="1D447" xlink:href="#MJX-1-TEX-I-1D447">
+           </use>
+          </g>
+         </g>
+        </g>
+       </svg>
+       的上界
+      </th>
+      <th style="text-align:center;">
+       <code>
+        L
+       </code>
+       操作
+      </th>
+      <th style="text-align:center;">
+       <code>
+        Q
+       </code>
+       操作
+      </th>
+      <th style="text-align:center;">
+       形态
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td style="text-align:center;">
+       <svg focusable="false" height="1.507ex" role="img" style="vertical-align: 0" viewbox="0 -666 500 666" width="1.131ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+         <path d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" id="MJX-2-TEX-N-31">
+         </path>
+        </defs>
+        <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+         <g data-mml-node="math">
+          <g data-mml-node="mn">
+           <use data-c="31" xlink:href="#MJX-2-TEX-N-31">
+           </use>
+          </g>
+         </g>
+        </g>
+       </svg>
+      </td>
+      <td style="text-align:center;">
+       <svg focusable="false" height="1.557ex" role="img" style="vertical-align: -0.05ex" viewbox="0 -666 1000 688" width="2.262ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+         <path d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" id="MJX-3-TEX-N-32">
+         </path>
+         <path d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" id="MJX-3-TEX-N-30">
+         </path>
+        </defs>
+        <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+         <g data-mml-node="math">
+          <g data-mml-node="mn">
+           <use data-c="32" xlink:href="#MJX-3-TEX-N-32">
+           </use>
+           <use data-c="30" transform="translate(500,0)" xlink:href="#MJX-3-TEX-N-30">
+           </use>
+          </g>
+         </g>
+        </g>
+       </svg>
+      </td>
+      <td rowspan="2" style="text-align:center;">
+       N / A
+      </td>
+      <td rowspan="4" style="text-align:center;">
+       N / A
+      </td>
+      <td rowspan="2" style="text-align:center;">
+       N / A
+      </td>
+     </tr>
+     <tr>
+      <td style="text-align:center;">
+       <svg focusable="false" height="1.507ex" role="img" style="vertical-align: 0" viewbox="0 -666 500 666" width="1.131ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+         <path d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" id="MJX-4-TEX-N-32">
+         </path>
+        </defs>
+        <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+         <g data-mml-node="math">
+          <g data-mml-node="mn">
+           <use data-c="32" xlink:href="#MJX-4-TEX-N-32">
+           </use>
+          </g>
+         </g>
+        </g>
+       </svg>
+      </td>
+      <td style="text-align:center;">
+       <svg focusable="false" height="1.557ex" role="img" style="vertical-align: -0.05ex" viewbox="0 -666 1500 688" width="3.394ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+         <path d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" id="MJX-5-TEX-N-32">
+         </path>
+         <path d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" id="MJX-5-TEX-N-30">
+         </path>
+        </defs>
+        <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+         <g data-mml-node="math">
+          <g data-mml-node="mn">
+           <use data-c="32" xlink:href="#MJX-5-TEX-N-32">
+           </use>
+           <use data-c="30" transform="translate(500,0)" xlink:href="#MJX-5-TEX-N-30">
+           </use>
+           <use data-c="30" transform="translate(1000,0)" xlink:href="#MJX-5-TEX-N-30">
+           </use>
+          </g>
+         </g>
+        </g>
+       </svg>
+      </td>
+     </tr>
+     <tr>
+      <td style="text-align:center;">
+       <svg focusable="false" height="1.581ex" role="img" style="vertical-align: -0.05ex" viewbox="0 -677 2333.6 699" width="5.28ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+         <path d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z" id="MJX-6-TEX-N-33">
+         </path>
+         <path d="M55 166Q55 241 101 304T222 367Q260 367 296 349T362 304T421 252T484 208T554 189Q616 189 655 236T694 338Q694 350 698 358T708 367Q722 367 722 334Q722 260 677 197T562 134H554Q517 134 481 152T414 196T355 248T292 293T223 311Q179 311 145 286Q109 257 96 218T80 156T69 133Q55 133 55 166Z" id="MJX-6-TEX-N-223C">
+         </path>
+         <path d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z" id="MJX-6-TEX-N-34">
+         </path>
+        </defs>
+        <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+         <g data-mml-node="math">
+          <g data-mml-node="mn">
+           <use data-c="33" xlink:href="#MJX-6-TEX-N-33">
+           </use>
+          </g>
+          <g data-mml-node="mo" transform="translate(777.8,0)">
+           <use data-c="223C" xlink:href="#MJX-6-TEX-N-223C">
+           </use>
+          </g>
+          <g data-mml-node="mn" transform="translate(1833.6,0)">
+           <use data-c="34" xlink:href="#MJX-6-TEX-N-34">
+           </use>
+          </g>
+         </g>
+        </g>
+       </svg>
+      </td>
+      <td style="text-align:center;">
+       <svg focusable="false" height="2.022ex" role="img" style="vertical-align: -0.05ex" viewbox="0 -871.8 3159 893.8" width="7.147ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+         <path d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z" id="MJX-7-TEX-N-34">
+         </path>
+         <path d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z" id="MJX-7-TEX-N-D7">
+         </path>
+         <path d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" id="MJX-7-TEX-N-31">
+         </path>
+         <path d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" id="MJX-7-TEX-N-30">
+         </path>
+        </defs>
+        <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+         <g data-mml-node="math">
+          <g data-mml-node="mn">
+           <use data-c="34" xlink:href="#MJX-7-TEX-N-34">
+           </use>
+          </g>
+          <g data-mml-node="mo" transform="translate(722.2,0)">
+           <use data-c="D7" xlink:href="#MJX-7-TEX-N-D7">
+           </use>
+          </g>
+          <g data-mml-node="msup" transform="translate(1722.4,0)">
+           <g data-mml-node="mn">
+            <use data-c="31" xlink:href="#MJX-7-TEX-N-31">
+            </use>
+            <use data-c="30" transform="translate(500,0)" xlink:href="#MJX-7-TEX-N-30">
+            </use>
+           </g>
+           <g data-mml-node="mn" transform="translate(1033,393.1) scale(0.707)">
+            <use data-c="34" xlink:href="#MJX-7-TEX-N-34">
+            </use>
+           </g>
+          </g>
+         </g>
+        </g>
+       </svg>
+      </td>
+      <td rowspan="3" style="text-align:center;">
+       无
+       <code>
+        L
+       </code>
+       操作
+      </td>
+      <td rowspan="2" style="text-align:center;">
+       链
+      </td>
+     </tr>
+     <tr>
+      <td style="text-align:center;">
+       <svg focusable="false" height="1.557ex" role="img" style="vertical-align: -0.05ex" viewbox="0 -666 2333.6 688" width="5.28ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+         <path d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z" id="MJX-8-TEX-N-35">
+         </path>
+         <path d="M55 166Q55 241 101 304T222 367Q260 367 296 349T362 304T421 252T484 208T554 189Q616 189 655 236T694 338Q694 350 698 358T708 367Q722 367 722 334Q722 260 677 197T562 134H554Q517 134 481 152T414 196T355 248T292 293T223 311Q179 311 145 286Q109 257 96 218T80 156T69 133Q55 133 55 166Z" id="MJX-8-TEX-N-223C">
+         </path>
+         <path d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z" id="MJX-8-TEX-N-36">
+         </path>
+        </defs>
+        <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+         <g data-mml-node="math">
+          <g data-mml-node="mn">
+           <use data-c="35" xlink:href="#MJX-8-TEX-N-35">
+           </use>
+          </g>
+          <g data-mml-node="mo" transform="translate(777.8,0)">
+           <use data-c="223C" xlink:href="#MJX-8-TEX-N-223C">
+           </use>
+          </g>
+          <g data-mml-node="mn" transform="translate(1833.6,0)">
+           <use data-c="36" xlink:href="#MJX-8-TEX-N-36">
+           </use>
+          </g>
+         </g>
+        </g>
+       </svg>
+      </td>
+      <td rowspan="2" style="text-align:center;">
+       <svg focusable="false" height="2.022ex" role="img" style="vertical-align: -0.05ex" viewbox="0 -871.8 3159 893.8" width="7.147ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+         <path d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z" id="MJX-9-TEX-N-38">
+         </path>
+         <path d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z" id="MJX-9-TEX-N-D7">
+         </path>
+         <path d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" id="MJX-9-TEX-N-31">
+         </path>
+         <path d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" id="MJX-9-TEX-N-30">
+         </path>
+         <path d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z" id="MJX-9-TEX-N-34">
+         </path>
+        </defs>
+        <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+         <g data-mml-node="math">
+          <g data-mml-node="mn">
+           <use data-c="38" xlink:href="#MJX-9-TEX-N-38">
+           </use>
+          </g>
+          <g data-mml-node="mo" transform="translate(722.2,0)">
+           <use data-c="D7" xlink:href="#MJX-9-TEX-N-D7">
+           </use>
+          </g>
+          <g data-mml-node="msup" transform="translate(1722.4,0)">
+           <g data-mml-node="mn">
+            <use data-c="31" xlink:href="#MJX-9-TEX-N-31">
+            </use>
+            <use data-c="30" transform="translate(500,0)" xlink:href="#MJX-9-TEX-N-30">
+            </use>
+           </g>
+           <g data-mml-node="mn" transform="translate(1033,393.1) scale(0.707)">
+            <use data-c="34" xlink:href="#MJX-9-TEX-N-34">
+            </use>
+           </g>
+          </g>
+         </g>
+        </g>
+       </svg>
+      </td>
+     </tr>
+     <tr>
+      <td style="text-align:center;">
+       <svg focusable="false" height="1.579ex" role="img" style="vertical-align: -0.05ex" viewbox="0 -676 2333.6 698" width="5.28ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+         <path d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z" id="MJX-10-TEX-N-37">
+         </path>
+         <path d="M55 166Q55 241 101 304T222 367Q260 367 296 349T362 304T421 252T484 208T554 189Q616 189 655 236T694 338Q694 350 698 358T708 367Q722 367 722 334Q722 260 677 197T562 134H554Q517 134 481 152T414 196T355 248T292 293T223 311Q179 311 145 286Q109 257 96 218T80 156T69 133Q55 133 55 166Z" id="MJX-10-TEX-N-223C">
+         </path>
+         <path d="M352 287Q304 211 232 211Q154 211 104 270T44 396Q42 412 42 436V444Q42 537 111 606Q171 666 243 666Q245 666 249 666T257 665H261Q273 665 286 663T323 651T370 619T413 560Q456 472 456 334Q456 194 396 97Q361 41 312 10T208 -22Q147 -22 108 7T68 93T121 149Q143 149 158 135T173 96Q173 78 164 65T148 49T135 44L131 43Q131 41 138 37T164 27T206 22H212Q272 22 313 86Q352 142 352 280V287ZM244 248Q292 248 321 297T351 430Q351 508 343 542Q341 552 337 562T323 588T293 615T246 625Q208 625 181 598Q160 576 154 546T147 441Q147 358 152 329T172 282Q197 248 244 248Z" id="MJX-10-TEX-N-39">
+         </path>
+        </defs>
+        <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+         <g data-mml-node="math">
+          <g data-mml-node="mn">
+           <use data-c="37" xlink:href="#MJX-10-TEX-N-37">
+           </use>
+          </g>
+          <g data-mml-node="mo" transform="translate(777.8,0)">
+           <use data-c="223C" xlink:href="#MJX-10-TEX-N-223C">
+           </use>
+          </g>
+          <g data-mml-node="mn" transform="translate(1833.6,0)">
+           <use data-c="39" xlink:href="#MJX-10-TEX-N-39">
+           </use>
+          </g>
+         </g>
+        </g>
+       </svg>
+      </td>
+      <td rowspan="3" style="text-align:center;">
+       保证
+       <svg focusable="false" height="1.756ex" role="img" style="vertical-align: -0.186ex" viewbox="0 -694 2354.6 776" width="5.327ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+         <path d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z" id="MJX-11-TEX-I-1D458">
+         </path>
+         <path d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z" id="MJX-11-TEX-N-3D">
+         </path>
+         <path d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" id="MJX-11-TEX-N-31">
+         </path>
+        </defs>
+        <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+         <g data-mml-node="math">
+          <g data-mml-node="mi">
+           <use data-c="1D458" xlink:href="#MJX-11-TEX-I-1D458">
+           </use>
+          </g>
+          <g data-mml-node="mo" transform="translate(798.8,0)">
+           <use data-c="3D" xlink:href="#MJX-11-TEX-N-3D">
+           </use>
+          </g>
+          <g data-mml-node="mn" transform="translate(1854.6,0)">
+           <use data-c="31" xlink:href="#MJX-11-TEX-N-31">
+           </use>
+          </g>
+         </g>
+        </g>
+       </svg>
+      </td>
+      <td rowspan="7" style="text-align:center;">
+       N / A
+      </td>
+     </tr>
+     <tr>
+      <td style="text-align:center;">
+       <svg focusable="false" height="1.557ex" role="img" style="vertical-align: -0.05ex" viewbox="0 -666 3333.6 688" width="7.542ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+         <path d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" id="MJX-12-TEX-N-31">
+         </path>
+         <path d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" id="MJX-12-TEX-N-30">
+         </path>
+         <path d="M55 166Q55 241 101 304T222 367Q260 367 296 349T362 304T421 252T484 208T554 189Q616 189 655 236T694 338Q694 350 698 358T708 367Q722 367 722 334Q722 260 677 197T562 134H554Q517 134 481 152T414 196T355 248T292 293T223 311Q179 311 145 286Q109 257 96 218T80 156T69 133Q55 133 55 166Z" id="MJX-12-TEX-N-223C">
+         </path>
+        </defs>
+        <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+         <g data-mml-node="math">
+          <g data-mml-node="mn">
+           <use data-c="31" xlink:href="#MJX-12-TEX-N-31">
+           </use>
+           <use data-c="30" transform="translate(500,0)" xlink:href="#MJX-12-TEX-N-30">
+           </use>
+          </g>
+          <g data-mml-node="mo" transform="translate(1277.8,0)">
+           <use data-c="223C" xlink:href="#MJX-12-TEX-N-223C">
+           </use>
+          </g>
+          <g data-mml-node="mn" transform="translate(2333.6,0)">
+           <use data-c="31" xlink:href="#MJX-12-TEX-N-31">
+           </use>
+           <use data-c="31" transform="translate(500,0)" xlink:href="#MJX-12-TEX-N-31">
+           </use>
+          </g>
+         </g>
+        </g>
+       </svg>
+      </td>
+      <td style="text-align:center;">
+       <svg focusable="false" height="2.022ex" role="img" style="vertical-align: -0.05ex" viewbox="0 -871.8 3159 893.8" width="7.147ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+         <path d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z" id="MJX-13-TEX-N-34">
+         </path>
+         <path d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z" id="MJX-13-TEX-N-D7">
+         </path>
+         <path d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" id="MJX-13-TEX-N-31">
+         </path>
+         <path d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" id="MJX-13-TEX-N-30">
+         </path>
+        </defs>
+        <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+         <g data-mml-node="math">
+          <g data-mml-node="mn">
+           <use data-c="34" xlink:href="#MJX-13-TEX-N-34">
+           </use>
+          </g>
+          <g data-mml-node="mo" transform="translate(722.2,0)">
+           <use data-c="D7" xlink:href="#MJX-13-TEX-N-D7">
+           </use>
+          </g>
+          <g data-mml-node="msup" transform="translate(1722.4,0)">
+           <g data-mml-node="mn">
+            <use data-c="31" xlink:href="#MJX-13-TEX-N-31">
+            </use>
+            <use data-c="30" transform="translate(500,0)" xlink:href="#MJX-13-TEX-N-30">
+            </use>
+           </g>
+           <g data-mml-node="mn" transform="translate(1033,393.1) scale(0.707)">
+            <use data-c="34" xlink:href="#MJX-13-TEX-N-34">
+            </use>
+           </g>
+          </g>
+         </g>
+        </g>
+       </svg>
+      </td>
+      <td rowspan="2" style="text-align:center;">
+       N / A
+      </td>
+     </tr>
+     <tr>
+      <td style="text-align:center;">
+       <svg focusable="false" height="1.557ex" role="img" style="vertical-align: -0.05ex" viewbox="0 -666 3333.6 688" width="7.542ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+         <path d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" id="MJX-14-TEX-N-31">
+         </path>
+         <path d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" id="MJX-14-TEX-N-32">
+         </path>
+         <path d="M55 166Q55 241 101 304T222 367Q260 367 296 349T362 304T421 252T484 208T554 189Q616 189 655 236T694 338Q694 350 698 358T708 367Q722 367 722 334Q722 260 677 197T562 134H554Q517 134 481 152T414 196T355 248T292 293T223 311Q179 311 145 286Q109 257 96 218T80 156T69 133Q55 133 55 166Z" id="MJX-14-TEX-N-223C">
+         </path>
+         <path d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z" id="MJX-14-TEX-N-33">
+         </path>
+        </defs>
+        <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+         <g data-mml-node="math">
+          <g data-mml-node="mn">
+           <use data-c="31" xlink:href="#MJX-14-TEX-N-31">
+           </use>
+           <use data-c="32" transform="translate(500,0)" xlink:href="#MJX-14-TEX-N-32">
+           </use>
+          </g>
+          <g data-mml-node="mo" transform="translate(1277.8,0)">
+           <use data-c="223C" xlink:href="#MJX-14-TEX-N-223C">
+           </use>
+          </g>
+          <g data-mml-node="mn" transform="translate(2333.6,0)">
+           <use data-c="31" xlink:href="#MJX-14-TEX-N-31">
+           </use>
+           <use data-c="33" transform="translate(500,0)" xlink:href="#MJX-14-TEX-N-33">
+           </use>
+          </g>
+         </g>
+        </g>
+       </svg>
+      </td>
+      <td style="text-align:center;">
+       <svg focusable="false" height="2.022ex" role="img" style="vertical-align: -0.05ex" viewbox="0 -871.8 3159 893.8" width="7.147ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+         <path d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z" id="MJX-15-TEX-N-38">
+         </path>
+         <path d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z" id="MJX-15-TEX-N-D7">
+         </path>
+         <path d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" id="MJX-15-TEX-N-31">
+         </path>
+         <path d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" id="MJX-15-TEX-N-30">
+         </path>
+         <path d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z" id="MJX-15-TEX-N-34">
+         </path>
+        </defs>
+        <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+         <g data-mml-node="math">
+          <g data-mml-node="mn">
+           <use data-c="38" xlink:href="#MJX-15-TEX-N-38">
+           </use>
+          </g>
+          <g data-mml-node="mo" transform="translate(722.2,0)">
+           <use data-c="D7" xlink:href="#MJX-15-TEX-N-D7">
+           </use>
+          </g>
+          <g data-mml-node="msup" transform="translate(1722.4,0)">
+           <g data-mml-node="mn">
+            <use data-c="31" xlink:href="#MJX-15-TEX-N-31">
+            </use>
+            <use data-c="30" transform="translate(500,0)" xlink:href="#MJX-15-TEX-N-30">
+            </use>
+           </g>
+           <g data-mml-node="mn" transform="translate(1033,393.1) scale(0.707)">
+            <use data-c="34" xlink:href="#MJX-15-TEX-N-34">
+            </use>
+           </g>
+          </g>
+         </g>
+        </g>
+       </svg>
+      </td>
+     </tr>
+     <tr>
+      <td style="text-align:center;">
+       <svg focusable="false" height="1.581ex" role="img" style="vertical-align: -0.05ex" viewbox="0 -677 3333.6 699" width="7.542ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+         <path d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" id="MJX-16-TEX-N-31">
+         </path>
+         <path d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z" id="MJX-16-TEX-N-34">
+         </path>
+         <path d="M55 166Q55 241 101 304T222 367Q260 367 296 349T362 304T421 252T484 208T554 189Q616 189 655 236T694 338Q694 350 698 358T708 367Q722 367 722 334Q722 260 677 197T562 134H554Q517 134 481 152T414 196T355 248T292 293T223 311Q179 311 145 286Q109 257 96 218T80 156T69 133Q55 133 55 166Z" id="MJX-16-TEX-N-223C">
+         </path>
+         <path d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z" id="MJX-16-TEX-N-35">
+         </path>
+        </defs>
+        <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+         <g data-mml-node="math">
+          <g data-mml-node="mn">
+           <use data-c="31" xlink:href="#MJX-16-TEX-N-31">
+           </use>
+           <use data-c="34" transform="translate(500,0)" xlink:href="#MJX-16-TEX-N-34">
+           </use>
+          </g>
+          <g data-mml-node="mo" transform="translate(1277.8,0)">
+           <use data-c="223C" xlink:href="#MJX-16-TEX-N-223C">
+           </use>
+          </g>
+          <g data-mml-node="mn" transform="translate(2333.6,0)">
+           <use data-c="31" xlink:href="#MJX-16-TEX-N-31">
+           </use>
+           <use data-c="35" transform="translate(500,0)" xlink:href="#MJX-16-TEX-N-35">
+           </use>
+          </g>
+         </g>
+        </g>
+       </svg>
+      </td>
+      <td style="text-align:center;">
+       <svg focusable="false" height="2.022ex" role="img" style="vertical-align: -0.05ex" viewbox="0 -871.8 3159 893.8" width="7.147ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+         <path d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z" id="MJX-17-TEX-N-34">
+         </path>
+         <path d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z" id="MJX-17-TEX-N-D7">
+         </path>
+         <path d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" id="MJX-17-TEX-N-31">
+         </path>
+         <path d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" id="MJX-17-TEX-N-30">
+         </path>
+        </defs>
+        <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+         <g data-mml-node="math">
+          <g data-mml-node="mn">
+           <use data-c="34" xlink:href="#MJX-17-TEX-N-34">
+           </use>
+          </g>
+          <g data-mml-node="mo" transform="translate(722.2,0)">
+           <use data-c="D7" xlink:href="#MJX-17-TEX-N-D7">
+           </use>
+          </g>
+          <g data-mml-node="msup" transform="translate(1722.4,0)">
+           <g data-mml-node="mn">
+            <use data-c="31" xlink:href="#MJX-17-TEX-N-31">
+            </use>
+            <use data-c="30" transform="translate(500,0)" xlink:href="#MJX-17-TEX-N-30">
+            </use>
+           </g>
+           <g data-mml-node="mn" transform="translate(1033,393.1) scale(0.707)">
+            <use data-c="34" xlink:href="#MJX-17-TEX-N-34">
+            </use>
+           </g>
+          </g>
+         </g>
+        </g>
+       </svg>
+      </td>
+      <td rowspan="2" style="text-align:center;">
+       无
+       <code>
+        L
+       </code>
+       操作
+      </td>
+      <td rowspan="4" style="text-align:center;">
+       N / A
+      </td>
+     </tr>
+     <tr>
+      <td style="text-align:center;">
+       <svg focusable="false" height="1.579ex" role="img" style="vertical-align: -0.05ex" viewbox="0 -676 3333.6 698" width="7.542ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+         <path d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" id="MJX-18-TEX-N-31">
+         </path>
+         <path d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z" id="MJX-18-TEX-N-36">
+         </path>
+         <path d="M55 166Q55 241 101 304T222 367Q260 367 296 349T362 304T421 252T484 208T554 189Q616 189 655 236T694 338Q694 350 698 358T708 367Q722 367 722 334Q722 260 677 197T562 134H554Q517 134 481 152T414 196T355 248T292 293T223 311Q179 311 145 286Q109 257 96 218T80 156T69 133Q55 133 55 166Z" id="MJX-18-TEX-N-223C">
+         </path>
+         <path d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z" id="MJX-18-TEX-N-37">
+         </path>
+        </defs>
+        <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+         <g data-mml-node="math">
+          <g data-mml-node="mn">
+           <use data-c="31" xlink:href="#MJX-18-TEX-N-31">
+           </use>
+           <use data-c="36" transform="translate(500,0)" xlink:href="#MJX-18-TEX-N-36">
+           </use>
+          </g>
+          <g data-mml-node="mo" transform="translate(1277.8,0)">
+           <use data-c="223C" xlink:href="#MJX-18-TEX-N-223C">
+           </use>
+          </g>
+          <g data-mml-node="mn" transform="translate(2333.6,0)">
+           <use data-c="31" xlink:href="#MJX-18-TEX-N-31">
+           </use>
+           <use data-c="37" transform="translate(500,0)" xlink:href="#MJX-18-TEX-N-37">
+           </use>
+          </g>
+         </g>
+        </g>
+       </svg>
+      </td>
+      <td style="text-align:center;">
+       <svg focusable="false" height="2.022ex" role="img" style="vertical-align: -0.05ex" viewbox="0 -871.8 3159 893.8" width="7.147ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+         <path d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z" id="MJX-19-TEX-N-38">
+         </path>
+         <path d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z" id="MJX-19-TEX-N-D7">
+         </path>
+         <path d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" id="MJX-19-TEX-N-31">
+         </path>
+         <path d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" id="MJX-19-TEX-N-30">
+         </path>
+         <path d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z" id="MJX-19-TEX-N-34">
+         </path>
+        </defs>
+        <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+         <g data-mml-node="math">
+          <g data-mml-node="mn">
+           <use data-c="38" xlink:href="#MJX-19-TEX-N-38">
+           </use>
+          </g>
+          <g data-mml-node="mo" transform="translate(722.2,0)">
+           <use data-c="D7" xlink:href="#MJX-19-TEX-N-D7">
+           </use>
+          </g>
+          <g data-mml-node="msup" transform="translate(1722.4,0)">
+           <g data-mml-node="mn">
+            <use data-c="31" xlink:href="#MJX-19-TEX-N-31">
+            </use>
+            <use data-c="30" transform="translate(500,0)" xlink:href="#MJX-19-TEX-N-30">
+            </use>
+           </g>
+           <g data-mml-node="mn" transform="translate(1033,393.1) scale(0.707)">
+            <use data-c="34" xlink:href="#MJX-19-TEX-N-34">
+            </use>
+           </g>
+          </g>
+         </g>
+        </g>
+       </svg>
+      </td>
+     </tr>
+     <tr>
+      <td style="text-align:center;">
+       <svg focusable="false" height="1.557ex" role="img" style="vertical-align: -0.05ex" viewbox="0 -666 1000 688" width="2.262ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+         <path d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" id="MJX-20-TEX-N-31">
+         </path>
+         <path d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z" id="MJX-20-TEX-N-38">
+         </path>
+        </defs>
+        <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+         <g data-mml-node="math">
+          <g data-mml-node="mn">
+           <use data-c="31" xlink:href="#MJX-20-TEX-N-31">
+           </use>
+           <use data-c="38" transform="translate(500,0)" xlink:href="#MJX-20-TEX-N-38">
+           </use>
+          </g>
+         </g>
+        </g>
+       </svg>
+      </td>
+      <td style="text-align:center;">
+       <svg focusable="false" height="2.022ex" role="img" style="vertical-align: -0.05ex" viewbox="0 -871.8 3159 893.8" width="7.147ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+         <path d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z" id="MJX-21-TEX-N-34">
+         </path>
+         <path d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z" id="MJX-21-TEX-N-D7">
+         </path>
+         <path d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" id="MJX-21-TEX-N-31">
+         </path>
+         <path d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" id="MJX-21-TEX-N-30">
+         </path>
+        </defs>
+        <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+         <g data-mml-node="math">
+          <g data-mml-node="mn">
+           <use data-c="34" xlink:href="#MJX-21-TEX-N-34">
+           </use>
+          </g>
+          <g data-mml-node="mo" transform="translate(722.2,0)">
+           <use data-c="D7" xlink:href="#MJX-21-TEX-N-D7">
+           </use>
+          </g>
+          <g data-mml-node="msup" transform="translate(1722.4,0)">
+           <g data-mml-node="mn">
+            <use data-c="31" xlink:href="#MJX-21-TEX-N-31">
+            </use>
+            <use data-c="30" transform="translate(500,0)" xlink:href="#MJX-21-TEX-N-30">
+            </use>
+           </g>
+           <g data-mml-node="mn" transform="translate(1033,393.1) scale(0.707)">
+            <use data-c="34" xlink:href="#MJX-21-TEX-N-34">
+            </use>
+           </g>
+          </g>
+         </g>
+        </g>
+       </svg>
+      </td>
+      <td rowspan="2" style="text-align:center;">
+       N / A
+      </td>
+     </tr>
+     <tr>
+      <td style="text-align:center;">
+       <svg focusable="false" height="1.557ex" role="img" style="vertical-align: -0.05ex" viewbox="0 -666 3333.6 688" width="7.542ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+         <path d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" id="MJX-22-TEX-N-31">
+         </path>
+         <path d="M352 287Q304 211 232 211Q154 211 104 270T44 396Q42 412 42 436V444Q42 537 111 606Q171 666 243 666Q245 666 249 666T257 665H261Q273 665 286 663T323 651T370 619T413 560Q456 472 456 334Q456 194 396 97Q361 41 312 10T208 -22Q147 -22 108 7T68 93T121 149Q143 149 158 135T173 96Q173 78 164 65T148 49T135 44L131 43Q131 41 138 37T164 27T206 22H212Q272 22 313 86Q352 142 352 280V287ZM244 248Q292 248 321 297T351 430Q351 508 343 542Q341 552 337 562T323 588T293 615T246 625Q208 625 181 598Q160 576 154 546T147 441Q147 358 152 329T172 282Q197 248 244 248Z" id="MJX-22-TEX-N-39">
+         </path>
+         <path d="M55 166Q55 241 101 304T222 367Q260 367 296 349T362 304T421 252T484 208T554 189Q616 189 655 236T694 338Q694 350 698 358T708 367Q722 367 722 334Q722 260 677 197T562 134H554Q517 134 481 152T414 196T355 248T292 293T223 311Q179 311 145 286Q109 257 96 218T80 156T69 133Q55 133 55 166Z" id="MJX-22-TEX-N-223C">
+         </path>
+         <path d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" id="MJX-22-TEX-N-32">
+         </path>
+         <path d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" id="MJX-22-TEX-N-30">
+         </path>
+        </defs>
+        <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+         <g data-mml-node="math">
+          <g data-mml-node="mn">
+           <use data-c="31" xlink:href="#MJX-22-TEX-N-31">
+           </use>
+           <use data-c="39" transform="translate(500,0)" xlink:href="#MJX-22-TEX-N-39">
+           </use>
+          </g>
+          <g data-mml-node="mo" transform="translate(1277.8,0)">
+           <use data-c="223C" xlink:href="#MJX-22-TEX-N-223C">
+           </use>
+          </g>
+          <g data-mml-node="mn" transform="translate(2333.6,0)">
+           <use data-c="32" xlink:href="#MJX-22-TEX-N-32">
+           </use>
+           <use data-c="30" transform="translate(500,0)" xlink:href="#MJX-22-TEX-N-30">
+           </use>
+          </g>
+         </g>
+        </g>
+       </svg>
+      </td>
+      <td style="text-align:center;">
+       <svg focusable="false" height="2.022ex" role="img" style="vertical-align: -0.05ex" viewbox="0 -871.8 3159 893.8" width="7.147ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+         <path d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z" id="MJX-23-TEX-N-38">
+         </path>
+         <path d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z" id="MJX-23-TEX-N-D7">
+         </path>
+         <path d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" id="MJX-23-TEX-N-31">
+         </path>
+         <path d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" id="MJX-23-TEX-N-30">
+         </path>
+         <path d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z" id="MJX-23-TEX-N-34">
+         </path>
+        </defs>
+        <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+         <g data-mml-node="math">
+          <g data-mml-node="mn">
+           <use data-c="38" xlink:href="#MJX-23-TEX-N-38">
+           </use>
+          </g>
+          <g data-mml-node="mo" transform="translate(722.2,0)">
+           <use data-c="D7" xlink:href="#MJX-23-TEX-N-D7">
+           </use>
+          </g>
+          <g data-mml-node="msup" transform="translate(1722.4,0)">
+           <g data-mml-node="mn">
+            <use data-c="31" xlink:href="#MJX-23-TEX-N-31">
+            </use>
+            <use data-c="30" transform="translate(500,0)" xlink:href="#MJX-23-TEX-N-30">
+            </use>
+           </g>
+           <g data-mml-node="mn" transform="translate(1033,393.1) scale(0.707)">
+            <use data-c="34" xlink:href="#MJX-23-TEX-N-34">
+            </use>
+           </g>
+          </g>
+         </g>
+        </g>
+       </svg>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <p>
+    注：N / A 表示没有特殊性。
+   </p>
+   <p>
+    对于
+    <svg focusable="false" height="1.824ex" role="img" style="vertical-align: -0.127ex" viewbox="0 -750 2333 806" width="5.278ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" id="MJX-24-TEX-N-31">
+      </path>
+      <path d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" id="MJX-24-TEX-N-30">
+      </path>
+      <path d="M465 605Q428 605 394 614T340 632T319 641Q332 608 332 548Q332 458 293 403T202 347Q145 347 101 402T56 548Q56 637 101 693T202 750Q241 750 272 719Q359 642 464 642Q580 642 650 732Q662 748 668 749Q670 750 673 750Q682 750 688 743T693 726Q178 -47 170 -52Q166 -56 160 -56Q147 -56 142 -45Q137 -36 142 -27Q143 -24 363 304Q469 462 525 546T581 630Q528 605 465 605ZM207 385Q235 385 263 427T292 548Q292 617 267 664T200 712Q193 712 186 709T167 698T147 668T134 615Q132 595 132 548V527Q132 436 165 403Q183 385 203 385H207ZM500 146Q500 234 544 290T647 347Q699 347 737 292T776 146T737 0T646 -56Q590 -56 545 0T500 146ZM651 -18Q679 -18 707 24T736 146Q736 215 711 262T644 309Q637 309 630 306T611 295T591 265T578 212Q577 200 577 146V124Q577 -18 647 -18H651Z" id="MJX-24-TEX-N-25">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mn">
+        <use data-c="31" xlink:href="#MJX-24-TEX-N-31">
+        </use>
+        <use data-c="30" transform="translate(500,0)" xlink:href="#MJX-24-TEX-N-30">
+        </use>
+        <use data-c="30" transform="translate(1000,0)" xlink:href="#MJX-24-TEX-N-30">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(1500,0)">
+        <use data-c="25" xlink:href="#MJX-24-TEX-N-25">
+        </use>
+       </g>
+      </g>
+     </g>
+    </svg>
+    的测试数据，所有节点的编号在
+    <svg focusable="false" height="1.545ex" role="img" style="vertical-align: 0" viewbox="0 -683 2721.6 683" width="6.157ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" id="MJX-25-TEX-N-31">
+      </path>
+      <path d="M55 166Q55 241 101 304T222 367Q260 367 296 349T362 304T421 252T484 208T554 189Q616 189 655 236T694 338Q694 350 698 358T708 367Q722 367 722 334Q722 260 677 197T562 134H554Q517 134 481 152T414 196T355 248T292 293T223 311Q179 311 145 286Q109 257 96 218T80 156T69 133Q55 133 55 166Z" id="MJX-25-TEX-N-223C">
+      </path>
+      <path d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z" id="MJX-25-TEX-I-1D441">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mn">
+        <use data-c="31" xlink:href="#MJX-25-TEX-N-31">
+        </use>
+       </g>
+       <g data-mml-node="mo" transform="translate(777.8,0)">
+        <use data-c="223C" xlink:href="#MJX-25-TEX-N-223C">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(1833.6,0)">
+        <use data-c="1D441" xlink:href="#MJX-25-TEX-I-1D441">
+        </use>
+       </g>
+      </g>
+     </g>
+    </svg>
+    的范围内。节点上的权值
+    <svg focusable="false" height="2.267ex" role="img" style="vertical-align: -0.312ex" viewbox="0 -864 2492.3 1002" width="5.639ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z" id="MJX-26-TEX-N-2264">
+      </path>
+      <path d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" id="MJX-26-TEX-N-31">
+      </path>
+      <path d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" id="MJX-26-TEX-N-30">
+      </path>
+      <path d="M352 287Q304 211 232 211Q154 211 104 270T44 396Q42 412 42 436V444Q42 537 111 606Q171 666 243 666Q245 666 249 666T257 665H261Q273 665 286 663T323 651T370 619T413 560Q456 472 456 334Q456 194 396 97Q361 41 312 10T208 -22Q147 -22 108 7T68 93T121 149Q143 149 158 135T173 96Q173 78 164 65T148 49T135 44L131 43Q131 41 138 37T164 27T206 22H212Q272 22 313 86Q352 142 352 280V287ZM244 248Q292 248 321 297T351 430Q351 508 343 542Q341 552 337 562T323 588T293 615T246 625Q208 625 181 598Q160 576 154 546T147 441Q147 358 152 329T172 282Q197 248 244 248Z" id="MJX-26-TEX-N-39">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mo">
+        <use data-c="2264" xlink:href="#MJX-26-TEX-N-2264">
+        </use>
+       </g>
+       <g data-mml-node="msup" transform="translate(1055.8,0)">
+        <g data-mml-node="mn">
+         <use data-c="31" xlink:href="#MJX-26-TEX-N-31">
+         </use>
+         <use data-c="30" transform="translate(500,0)" xlink:href="#MJX-26-TEX-N-30">
+         </use>
+        </g>
+        <g data-mml-node="mn" transform="translate(1033,393.1) scale(0.707)">
+         <use data-c="39" xlink:href="#MJX-26-TEX-N-39">
+         </use>
+        </g>
+       </g>
+      </g>
+     </g>
+    </svg>
+    ，
+    <svg focusable="false" height="1.636ex" role="img" style="vertical-align: -0.09ex" viewbox="0 -683 3272.6 723" width="7.404ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="M289 629Q289 635 232 637Q208 637 201 638T194 648Q194 649 196 659Q197 662 198 666T199 671T201 676T203 679T207 681T212 683T220 683T232 684Q238 684 262 684T307 683Q386 683 398 683T414 678Q415 674 451 396L487 117L510 154Q534 190 574 254T662 394Q837 673 839 675Q840 676 842 678T846 681L852 683H948Q965 683 988 683T1017 684Q1051 684 1051 673Q1051 668 1048 656T1045 643Q1041 637 1008 637Q968 636 957 634T939 623Q936 618 867 340T797 59Q797 55 798 54T805 50T822 48T855 46H886Q892 37 892 35Q892 19 885 5Q880 0 869 0Q864 0 828 1T736 2Q675 2 644 2T609 1Q592 1 592 11Q592 13 594 25Q598 41 602 43T625 46Q652 46 685 49Q699 52 704 61Q706 65 742 207T813 490T848 631L654 322Q458 10 453 5Q451 4 449 3Q444 0 433 0Q418 0 415 7Q413 11 374 317L335 624L267 354Q200 88 200 79Q206 46 272 46H282Q288 41 289 37T286 19Q282 3 278 1Q274 0 267 0Q265 0 255 0T221 1T157 2Q127 2 95 1T58 0Q43 0 39 2T35 11Q35 13 38 25T43 40Q45 46 65 46Q135 46 154 86Q158 92 223 354T289 629Z" id="MJX-27-TEX-I-1D440">
+      </path>
+      <path d="M694 -11T694 -19T688 -33T678 -40Q671 -40 524 29T234 166L90 235Q83 240 83 250Q83 261 91 266Q664 540 678 540Q681 540 687 534T694 519T687 505Q686 504 417 376L151 250L417 124Q686 -4 687 -5Q694 -11 694 -19Z" id="MJX-27-TEX-N-3C">
+      </path>
+      <path d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z" id="MJX-27-TEX-I-1D441">
+      </path>
+     </defs>
+     <g fill="currentColor" stroke="currentColor" stroke-width="0" transform="scale(1,-1)">
+      <g data-mml-node="math">
+       <g data-mml-node="mi">
+        <use data-c="1D440" xlink:href="#MJX-27-TEX-I-1D440">
+        </use>
+       </g>
+       <g data-mml-node="mo" transform="translate(1328.8,0)">
+        <use data-c="3C" xlink:href="#MJX-27-TEX-N-3C">
+        </use>
+       </g>
+       <g data-mml-node="mi" transform="translate(2384.6,0)">
+        <use data-c="1D441" xlink:href="#MJX-27-TEX-I-1D441">
+        </use>
+       </g>
+      </g>
+     </g>
+    </svg>
+    。
+   </p>
+  </div>
+ </div>
+</div>
